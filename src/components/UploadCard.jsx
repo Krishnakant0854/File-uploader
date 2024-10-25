@@ -53,7 +53,7 @@ const Card = (props) => {
     if (fileDataURL) {
       props.setLoading(true);
       axios
-        .post("http://localhost:3000/api/v1/upload/", {
+        .post("https://file-uploader-backend-5o8l.onrender.com/", {
           image: fileDataURL,
         })
         .then((res) => {
